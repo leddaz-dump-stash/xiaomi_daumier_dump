@@ -1,0 +1,9 @@
+on property:ro.hardware=qcom
+    start misight
+
+service misight /system/bin/misight -region ${ro.miui.build.region}
+   class main
+   user root
+   disabled
+   group system cache log readproc media_rw everybody
+   seclabel u:r:misight:s0

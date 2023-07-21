@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventQuota>
+<Dev>
+<Summary defDailyCnt="200" defLogCnt="200" defLogSpace="300" UploadExpireYear="5" Level1Month="3" Level1Max="8" Level2Month="12" Level2Max="5" Level3Month="24" Level3Max="3" LogStatic="240"/>
+</Dev>
+
+<Stable>
+<Summary defDailyCnt="200" defLogCnt="100" defLogSpace="300" UploadExpireYear="5" Level1Month="3" Level1Max="8" Level2Month="12" Level2Max="5" Level3Month="24" Level3Max="2" LogStatic="240"/>
+</Stable>
+</EventQuota>

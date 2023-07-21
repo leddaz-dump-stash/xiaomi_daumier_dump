@@ -1,0 +1,11 @@
+on property:sys.boot_completed=1
+    write /proc/${persist.vendor.camera.provider.pid}/reclaim anon
+
+service cameraserver /system/bin/cameraserver
+    class main
+    user cameraserver
+    group audio camera input drmrpc readproc
+    ioprio rt 4
+    task_profiles CameraServiceCapacity MaxPerformance
+    rlimit rtprio 10 10
+    writepid /dev/memcg/camera/service/cgroup.procs

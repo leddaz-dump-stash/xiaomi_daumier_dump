@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?Declaration Don't modify the file manually,  its created automaticlly?>
+<Upload>
+  <TemplateGroup>
+  </TemplateGroup>
+  <Event min="902001001" max="902001001">
+  <Cmd FaultLevel="GENERAL" PrivacyLevel="L2" run="dumpsys misight plugin PerfLogAnalyzer" output="perf_log_analyzer.log"/>
+  </Event>
+
+  <Event min="902001050" max="902001051">
+  <Cmd FaultLevel="GENERAL" PrivacyLevel="L2" run="dumpsys misight plugin PerfLogAnalyzer" output="perf_log_analyzer.log"/>
+  </Event>
+  <Event min="902001100" max="902001104">
+  <Cmd FaultLevel="GENERAL" PrivacyLevel="L2" run="dumpsys misight plugin PerfLogAnalyzer" output="perf_log_analyzer.log"/>
+  </Event>
+  <Event min="902001200" max="902001204">
+  <Cmd FaultLevel="GENERAL" PrivacyLevel="L2" run="dumpsys misight plugin PerfLogAnalyzer" output="perf_log_analyzer.log"/>
+  </Event>
+
+
+</Upload>
