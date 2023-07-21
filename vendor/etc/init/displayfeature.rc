@@ -1,0 +1,18 @@
+# Copyright (c) 2021 Xiaomi, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Xiaomi, Inc.
+#
+
+service displayfeature /vendor/bin/displayfeature
+    class late_start
+    user system
+    group system graphics
+
+on property:init.svc.surfaceflinger=stopped
+    stop displayfeature
+
+on property:init.svc.surfaceflinger=running
+    start displayfeature
+
+on property:init.svc.surfaceflinger=restarting
+    stop displayfeature

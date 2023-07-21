@@ -1,0 +1,19 @@
+#!/system/bin/sh
+TEE_TYPE="/cache/tee_type"
+ISEE_TOOL_PATH="/vendor/bin/cardapp_client_isee"
+MITEE_TOOL_PATH="/vendor/bin/cardapp_client_mitee"
+
+function do_install_tzkey() {
+    getprop ro.boot.tee_type > ${TEE_TYPE}
+    read tee_type < ${TEE_TYPE}
+    if [ ${tee_type} -eq 1 ]
+    then
+        ${MITEE_TOOL_PATH}
+    elif [ ${tee_type} -eq 2 ]
+    then
+        ${ISEE_TOOL_PATH}
+    fi
+    return 0
+}
+
+do_install_tzkey

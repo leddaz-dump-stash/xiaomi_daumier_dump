@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PerfService>
+        <Package name="com.android.fileexplorer">
+                <Activity name="fileexplor.copyactivity">
+                        <PERF_RES_HANDLE handle="0"/>
+                        <PERF_RES_BOOSTLIST boostList="0x00400000,3000000,0x00400100,3000000,0x00400200,3000000,0x00808000,1,0x02054400,0,0x01000000,1,0x01408300,100"/>
+                        <PERF_RES_DURATION duration="30000"/>
+                        <PERF_RES_NUMARGS numArgs="14"/>
+                </Activity>
+                <Activity name="fileexplor.unzipactivity">
+                        <PERF_RES_HANDLE handle="0"/>
+                        <PERF_RES_BOOSTLIST boostList="0x00400000,3000000,0x00400100,3000000,0x00400200,3000000,0x00808000,1,0x02054400,0,0x01000000,1,0x01408300,100"/>
+                        <PERF_RES_DURATION duration="30000"/>
+                        <PERF_RES_NUMARGS numArgs="14"/>
+                </Activity>
+        </Package>
+        <Package name="com.tencent.mm">
+                <Activity name="com.tencent.mm.plugin.backup.backupmoveui.BackupMoveRecoverUI">
+                        <PERF_RES_HANDLE handle="0"/>
+                        <PERF_RES_BOOSTLIST boostList="0x00400000,3000000,0x00400100,3000000,0x00400200,3000000,0x00808000,1,0x02054400,0,0x01000000,1,0x01408300,100"/>
+                        <PERF_RES_NUMARGS numArgs="14"/>
+                </Activity>
+        </Package>
+</PerfService>

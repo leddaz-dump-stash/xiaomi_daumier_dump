@@ -1,0 +1,49 @@
+{
+    "PipelineName": "SuperlightLdcPlugin",
+    "NodesList": {
+      "Node": [
+        {
+          "NodeName": "com.xiaomi.plugin.ldc",
+          "NodeInstance": "LDCInstance"
+        },
+        {
+            "NodeName": "com.xiaomi.plugin.depurple",
+            "NodeInstance": "DepurpleInstance"
+        }
+      ]
+    },
+    "PortLinkages": {
+      "Link": [
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "LDCInstance"
+          }
+        },
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "LDCInstance"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "DepurpleInstance"
+          }
+        },
+        {
+            "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "DepurpleInstance"
+            },
+            "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SinkBuffer"
+            }
+        }
+      ]
+    }
+  }

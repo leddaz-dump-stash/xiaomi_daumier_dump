@@ -1,0 +1,20 @@
+#!/system/bin/sh
+TEE_TYPE="/cache/tee_type"
+ISEE_TOOL_PATH="/vendor/bin/init_thh_isee"
+MITEE_TOOL_PATH="/vendor/bin/init_thh_mitee"
+CMD=$*
+
+function do_install_rpmb() {
+    getprop ro.boot.tee_type > ${TEE_TYPE}
+    read tee_type < ${TEE_TYPE}
+    if [ ${tee_type} -eq 1 ]
+    then
+        ${MITEE_TOOL_PATH} ${CMD}
+    elif [ ${tee_type} -eq 2 ]
+    then
+        ${ISEE_TOOL_PATH} ${CMD}
+    fi
+    return 0
+}
+
+do_install_rpmb

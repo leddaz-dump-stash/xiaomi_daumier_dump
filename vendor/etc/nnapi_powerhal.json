@@ -1,0 +1,196 @@
+{
+    "fast_single_answer": [
+        {
+            "name": "PERF_RES_CPUFREQ_PERF_MODE",
+            "id": "0x00414000",
+            "value": 1
+        },
+        {
+            "name": "PERF_RES_SCHED_ISOLATION_CPU",
+            "id": "0x0143c000",
+            "value": 128
+        },
+        {
+            "name": "PERF_RES_DRAM_OPP_MIN",
+            "id": "0x01000000",
+            "value": 0
+        },
+        {
+            "name": "PERF_RES_SCHED_UCLAMP_MIN_TA",
+            "id": "0x01408300",
+            "value": 100
+        },
+        {
+            "name": "PERF_RES_FPS_FSTB_SOFT_FPS_LOWER",
+            "id": "0x0201c000",
+            "value": 60
+        },
+        {
+            "name": "PERF_RES_FPS_FSTB_SOFT_FPS_UPPER",
+            "id": "0x0201c100",
+            "value": 60
+        },
+        {
+            "name": "PERF_RES_FPS_FBT_BHR_OPP",
+            "id": "0x02020000",
+            "value": 31
+        },
+        {
+            "name": "PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1",
+            "id": "0x01438400",
+            "value": 0
+        },
+        {
+            "name": "PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2",
+            "id": "0x01438500",
+            "value": 0
+        },
+        {
+            "name": "PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1",
+            "id": "0x01438700",
+            "value": 40000
+        },
+        {
+            "name": "PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2",
+            "id": "0x01438800",
+            "value": 40000
+        },
+        {
+            "name": "PERF_RES_PM_QOS_CPUIDLE_MCDI_ENABLE",
+            "id": "0x01c3c100",
+            "value": 0
+        }
+    ],
+    "compilation": [
+        {
+            "name": "PERF_RES_CPUFREQ_PERF_MODE",
+            "id": "0x00414000",
+            "value": 1
+        },
+        {
+            "name": "PERF_RES_DRAM_OPP_MIN",
+            "id": "0x01000000",
+            "value": 0
+        },
+        {
+            "name": "PERF_RES_SCHED_UCLAMP_MIN_TA",
+            "id": "0x01408300",
+            "value": 100
+        },
+        {
+            "name": "PERF_RES_FPS_FBT_BHR_OPP",
+            "id": "0x02020000",
+            "value": 31
+        },
+        {
+            "name": "PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_1",
+            "id": "0x01438400",
+            "value": 0
+        },
+        {
+            "name": "PERF_RES_SCHED_UTIL_UP_RATE_LIMIT_US_CLUSTER_2",
+            "id": "0x01438500",
+            "value": 0
+        },
+        {
+            "name": "PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_1",
+            "id": "0x01438700",
+            "value": 40000
+        },
+        {
+            "name": "PERF_RES_SCHED_UTIL_DOWN_RATE_LIMIT_US_CLUSTER_2",
+            "id": "0x01438800",
+            "value": 40000
+        }
+    ],
+    "baseline": [
+        {
+            "name": "PERF_RES_AI_APUSYS_BOOST_IPU_IF",
+            "id": "0X01810000",
+            "value": 0
+        }
+    ],
+    "preference_options": [
+        {
+            "name": "low_power",
+            "id": 0,
+            "options": "--opt-bw"
+        },
+        {
+            "name": "fast_single_answer",
+            "id": 1,
+            "options": "--opt 3 --intval-coloring-coverage=0.01"
+        },
+        {
+            "name": "sustained_speed",
+            "id": 2,
+            "options": "--opt-bw"
+        }
+    ],
+    "smp_signature": [
+        {
+            "hash": "c06f338120420b3f478a661ec1ac573f2d2030f5562c6dc14ea4e06596b3759f",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "3423c99d1f77462218376194c9a01252340c03e565994f6c8ff464434d91e65f",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "cef21a3bb59fbe6ade355c813f17ec6b95d463cf1113be7f8a2c892990bb6cd1",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "9849225ba4592fc48174fc4996f2033f27334121e61da013c63d257d291b1f70",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "b851a1d696862404efd556cc3b69973341b88e75a02cdde2eadd3603f1717c2f",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "e5fe0c8f22b4ba828c26ee8f33ae01df073133d87cfcad7452da9aefaf9ec0c1",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "b2601ea2e81454896d90985a3f8c3b48ae9865ae6a773b2f4d47035096e34268",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "431d8864910d0555a5cb17b7d99a08419b1afa7b3dd9ba6852736b2ed7ed6727",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "b59a4ff6817d936ec4e5b36bd24bf285690d35578bb54eab5880d4bd27df9161",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "e27aa0682c820f95497b83fb0846a92551825ed4e423adc709eb6d8862e1c7d4",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "fde7a79de00cea53748523a3f8b81eac0d3b54926d0bd6cd665c47695cc63a90",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "93c9bf50f8a2fccb601ff91c0204a9d933c9660cb7b483a03875a6babc9292ef",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "168ce2ee135c09c9c599aff2911761cd32ab2d0feab1a1a114e0480888e529bd",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "0d77efd6075e49e38d8dca1cf07a97e4c7594a6b44d85ff115f67592701ae09c",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "fe971d3a6b4c414e3aa19d3840bbac85bce987238fa50a9b0b1a9c6d4822197a",
+            "options": "--gno=SMP --num-mdla 4"
+        },
+        {
+            "hash": "2f31050e1e580c1b2e046fa9c5d9770da790913d7941da981c4dbd1d10ef9af2",
+            "options": "--gno=SMP --num-mdla 2"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+#!/system/bin/sh
+TEE_TYPE="/cache/tee_type"
+RESULT="/cache/kmsetkey_result"
+ISEE_TOOL_PATH="/vendor/bin/kmsetkey_isee"
+MITEE_TOOL_PATH="/vendor/bin/kmsetkey_mitee"
+KEYBOX_PATH="/data/vendor/thh/keybox.xml"
+
+function do_install_keybox() {
+
+    getprop ro.boot.tee_type > ${TEE_TYPE}
+    read tee_type < ${TEE_TYPE}
+    if [ ${tee_type} -eq 1 ]
+    then
+        ${MITEE_TOOL_PATH} --path ${KEYBOX_PATH} > ${RESULT}
+        cat ${RESULT} | grep -q "Success" || return 1
+    elif [ ${tee_type} -eq 2 ]
+    then
+        ${ISEE_TOOL_PATH} > ${RESULT}
+        cat ${RESULT} | grep -q "done" || return 2
+    fi
+    return 0
+}
+
+if do_install_keybox
+then
+    echo "InstallKeybox is done!"
+else
+    echo "FAIL $?"
+    exit 66
+fi

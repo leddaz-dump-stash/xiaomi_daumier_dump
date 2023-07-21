@@ -1,0 +1,61 @@
+# Copyright (C) 2012 The Android Open Source Project
+#
+# IMPORTANT: Do not create world writable files or directories.
+# This is a common source of Android security bugs.
+#
+
+service factory_sleep /system/bin/sh /vendor/bin/powersleep.sh
+    class main
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:shell:s0
+
+on property:factory-sleep=1
+    start factory_sleep
+
+service factory_shutdown /system/bin/sh /vendor/bin/shutdown.sh
+    class main
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:shell:s0
+
+on property:factory-shutdown=1
+    start factory_shutdown
+service factory_airplane_on /system/bin/sh /vendor/bin/airplane_on.sh
+    class main
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:shell:s0
+on property:factory-airplane_on=1
+    start factory_airplane_on
+service factory_airplane_off /system/bin/sh /vendor/bin/airplane_off.sh
+    class main
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:shell:s0
+on property:factory-airplane_off=1
+    start factory_airplane_off
+
+on boot
+    copy vendor/bin/dhry-soc /data/dhry
+    copy vendor/bin/dhrystone01.sh /data/dhrystone01.sh
+    copy vendor/bin/dhrystone02.sh /data/dhrystone02.sh
+    copy vendor/bin/dhrystone04.sh /data/dhrystone04.sh
+    copy vendor/bin/dhrystone08.sh /data/dhrystone08.sh
+    copy vendor/bin/dhrystone10.sh /data/dhrystone10.sh
+    copy vendor/bin/dhrystone20.sh /data/dhrystone20.sh
+    copy vendor/bin/dhrystone40.sh /data/dhrystone40.sh
+    copy vendor/bin/dhrystone80.sh /data/dhrystone80.sh
+    copy vendor/bin/input.txt /data/input.txt
+    copy vendor/bin/cpu_condition_L2S.sh /data/cpu_condition_L2S.sh
+    chmod 777 /data/dhry
+    chmod 777 /data/cpu_condition_L2S.sh
+    chmod 777 /data/input.txt

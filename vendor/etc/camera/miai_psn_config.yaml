@@ -1,0 +1,46 @@
+# push to /vendor/etc/camera to be read by main program
+# version: 2022_0526_1026_L2M
+algo_params:
+  common:
+    daylight_lux_thres: 275
+    use_faceblur: false
+  align:
+  deghost:
+    ev6_ratio_mul: 0
+  merge:
+
+  denoise:
+    dldenoise_lux_thres: 0 #250
+    dldenoise_iso_thres: 230
+
+    m_min_front_dlw: 0.2
+    m_max_front_dlw: 0.6
+    m_min_back_dlw: 0.3
+    m_max_back_dlw: 0.6
+    nlm_window_size: 5
+    nlm_template_size: 3
+
+  post_process: 
+    face_light: 0.05
+    face_contrast: 0.0
+    face_gamma: 0.0
+    bg_light_ratio: 0.05
+    dark_bg_light_ratio: 0.0
+    dark_lighten_lux_thresh: 600.0
+    
+    # sharp
+    portrait_sharp_0: 2.8
+    portrait_sharp_1: 2.0
+    portrait_sharp_2: 2.0
+    portrait_sharp_3: 2.0
+
+    #satuation
+    adjust_satuation: false
+    satuation_a: 0.0
+    satuation_b: 0.0
+
+    #thres
+    blend_sharpen_lux_thres: 400
+    
+
+    
