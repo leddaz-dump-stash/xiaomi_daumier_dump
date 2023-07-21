@@ -1,0 +1,45 @@
+{
+    "title": "琉璃",
+    "titleResId": "wallpaper_group_molten_glass_title",
+    "cardType": 1,
+    "count": 9,
+    "slideCount": 9,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./ColoredGlaze01.jpg",
+        "originPath": "./ColoredGlaze01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./ColoredGlaze02.jpg",
+        "originPath": "./ColoredGlaze02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./ColoredGlaze03.jpg",
+        "originPath": "./ColoredGlaze03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./ColoredGlaze04.jpg",
+        "originPath": "./ColoredGlaze04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./ColoredGlaze05.jpg",
+        "originPath": "./ColoredGlaze05.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./ColoredGlaze06.jpg",
+        "originPath": "./ColoredGlaze06.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./ColoredGlaze07.jpg",
+        "originPath": "./ColoredGlaze07.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./ColoredGlaze08.jpg",
+        "originPath": "./ColoredGlaze08.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./ColoredGlaze09.jpg",
+        "originPath": "./ColoredGlaze09.jpg",
+        "type": "wallpaper"
+    }]
+}

@@ -1,0 +1,37 @@
+{
+    "title": "泡泡",
+    "titleResId": "wallpaper_group_macaron_title",
+    "cardType": 1,
+    "count": 7,
+    "slideCount": 7,
+    "randomOrder": false,
+    "wallpapers": [{
+        "thumbPath": "./Macaron01.jpg",
+        "originPath": "./Macaron01.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Macaron02.jpg",
+        "originPath": "./Macaron02.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Macaron03.jpg",
+        "originPath": "./Macaron03.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Macaron04.jpg",
+        "originPath": "./Macaron04.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Macaron05.jpg",
+        "originPath": "./Macaron05.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Macaron06.jpg",
+        "originPath": "./Macaron06.jpg",
+        "type": "wallpaper"
+    }, {
+        "thumbPath": "./Macaron07.jpg",
+        "originPath": "./Macaron07.jpg",
+        "type": "wallpaper"
+    }]
+}
