@@ -1,0 +1,17 @@
+system_ext/apex/com.android.vndk.v30.apex
+system_ext/priv-app/Settings/Settings.apk
+vendor/lib64/mt6983/libaibc_tuning.so
+product/app/HybridPlatform/HybridPlatform.apk
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+product/app/VoiceAssistAndroidT/VoiceAssistAndroidT.apk
+product/data-app/Health/Health.apk
+product/data-app/MIMediaEditor/MIMediaEditor.apk
+product/data-app/MIUIYoupin/MIUIYoupin.apk
+product/data-app/MiShop/MiShop.apk
+product/data-app/SmartHome/SmartHome.apk
+product/priv-app/Gallery_T_CN/Gallery_T_CN.apk
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/MIUIBrowser/MIUIBrowser.apk
+product/priv-app/MIUIMusicT/MIUIMusicT.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk
+product/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk

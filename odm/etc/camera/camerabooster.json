@@ -1,0 +1,31 @@
+{
+    "version": "1.0",
+    "product": "daumier",
+    "threshold": {
+            "update_state_delay_ms": 10000,
+            "lowerAdj_freeMem_threshold": 307200
+        },
+    "support": {
+        "mms_camcpt_enable": true,
+        "adj_swap_support": true
+        },
+    "configs": [
+        {
+            "name": "protect_list",
+            "config": [
+                "android.process.media",
+                "com.miui.gallery",
+                "com.android.systemui:sliderview",
+                "com.android.camera",
+                "com.tencent.mm",
+                "com.tencent.mm:push",
+                "com.tencent.mobileqq",
+                "com.tencent.mobileqq:MSF",
+                "com.android.traceur",
+                "com.ss.android.lark.kami",
+                "com.xiaomi.mi_connect_service",
+                "com.phonetest.application:CameraMemoryWatcher"
+            ]
+        }
+    ]
+}

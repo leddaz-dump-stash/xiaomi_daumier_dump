@@ -1,0 +1,14 @@
+# missi_phone_cn-user 13 TP1A.220624.014 V14.0.8.0.TLGCNXM release-keys
+- manufacturer: xiaomi
+- platform: commonmt6983
+- codename: daumier
+- flavor: missi_phone_cn-user
+- release: 13
+- id: TP1A.220624.014
+- incremental: V14.0.8.0.TLGCNXM
+- tags: release-keys
+- fingerprint: Xiaomi/daumier/daumier:12/SP1A.210812.016/V14.0.8.0.TLGCNXM:user/release-keys
+- is_ab: true
+- brand: Xiaomi
+- branch: missi_phone_cn-user-13-TP1A.220624.014-V14.0.8.0.TLGCNXM-release-keys
+- repo: xiaomi_daumier_dump
